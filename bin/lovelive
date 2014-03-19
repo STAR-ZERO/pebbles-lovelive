@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'pebbles/lovelive/cli'
+
+Pebbles::LoveLive::CLI.start(ARGV)
