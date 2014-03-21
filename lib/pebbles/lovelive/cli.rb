@@ -22,13 +22,16 @@ module Pebbles
         Example:
           \x5 $ lovelive eli
           \x5 $ lovelive eli --aa
+          \x5 $ lovelive eli --bigaa
       LONGDESC
       option :aa, type: :boolean, :desc => "show ASCII-Art"
+      option :bigaa, type: :boolean, :desc => "show Big ASCII-Art"
       def member(name)
         member = LoveLive.send(name)
         if member
           puts member
           puts member.aa if options[:aa]
+          puts member.big_aa if options[:bigaa]
         else
           puts "Error: unknown member"
           puts ""

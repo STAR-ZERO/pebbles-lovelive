@@ -9,6 +9,10 @@ module Pebbles
         aa_text = File.open(File.join(CONFIG_PATH, "aa_#{name}.txt")).read
         self.instance_variable_set('@aa', aa_text)
         self.class.send(:define_method, 'aa', proc { self.instance_variable_get("@aa") })
+
+        big_aa_text = File.open(File.join(CONFIG_PATH, "big_aa_#{name}.txt")).read
+        self.instance_variable_set('@big_aa', big_aa_text)
+        self.class.send(:define_method, 'big_aa', proc { self.instance_variable_get("@big_aa") })
       end
 
       def name
