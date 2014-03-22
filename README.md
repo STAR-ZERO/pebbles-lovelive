@@ -1,4 +1,4 @@
-# Pebbles::Lovelive
+# Pebbles::LoveLive
 
 [![Build Status](https://travis-ci.org/STAR-ZERO/pebbles-lovelive.svg?branch=master)](https://travis-ci.org/STAR-ZERO/pebbles-lovelive)
 [![Coverage Status](https://coveralls.io/repos/STAR-ZERO/pebbles-lovelive/badge.png?branch=master)](https://coveralls.io/r/STAR-ZERO/pebbles-lovelive?branch=master)
