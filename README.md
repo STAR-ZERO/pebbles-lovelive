@@ -3,6 +3,7 @@
 [![Build Status](https://travis-ci.org/STAR-ZERO/pebbles-lovelive.svg?branch=master)](https://travis-ci.org/STAR-ZERO/pebbles-lovelive)
 [![Coverage Status](https://coveralls.io/repos/STAR-ZERO/pebbles-lovelive/badge.png?branch=master)](https://coveralls.io/r/STAR-ZERO/pebbles-lovelive?branch=master)
 [![Code Climate](https://codeclimate.com/github/STAR-ZERO/pebbles-lovelive.png)](https://codeclimate.com/github/STAR-ZERO/pebbles-lovelive)
+[![Dependency Status](https://gemnasium.com/STAR-ZERO/pebbles-lovelive.svg)](https://gemnasium.com/STAR-ZERO/pebbles-lovelive)
 
 Show the profile of LoveLive μ's members.
 
