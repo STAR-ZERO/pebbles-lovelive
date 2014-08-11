@@ -17,11 +17,19 @@ module Pebbles
 
     describe 'eli' do
       before { @eli = @members[:eli] }
-      subject { @eli }
+      subject(:eli) { @eli }
 
-      its(:name) { should == @eli.last_name + @eli.first_name }
-      its(:birth) { should == "#{@eli.birth_month}月#{@eli.birth_day}日" }
-      its(:three_size) { should == "B#{@eli.bust}・W#{@eli.waste}・H#{@eli.hip}" }
+      it "#name is full name" do
+        expect(eli.name).to eq(@eli.last_name + @eli.first_name)
+      end
+
+      it "#birth is format of birthday" do
+        expect(eli.birth).to eq("#{@eli.birth_month}月#{@eli.birth_day}日")
+      end
+
+      it "#three_size is format of three size" do
+        expect(eli.three_size).to eq("B#{@eli.bust}・W#{@eli.waste}・H#{@eli.hip}")
+      end
     end
   end
 end

@@ -3,7 +3,7 @@ require 'spec_helper'
 module Pebbles
   describe LoveLive do
     it 'should have a version number' do
-      Pebbles::LoveLive::VERSION.should_not be_nil
+      expect(Pebbles::LoveLive::VERSION).not_to be_nil
     end
 
     context 'exists member' do
