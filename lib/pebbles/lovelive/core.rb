@@ -7,16 +7,30 @@ module Pebbles
       include Singleton
 
       def initialize
-        yaml = YAML.load_file(File.join(CONFIG_PATH, 'members.yml'))
-        @@members = {}
-        yaml.each do |k, v|
-          @@members[k] = Member.new(k, v)
-        end
+        initialize_member
+        initialize_story
+      end
+
+      def story
+        @@story
       end
 
       def method_missing(method, *args)
         @@members[method]
       end
+
+      private
+        def initialize_member
+          yaml = YAML.load_file(File.join(CONFIG_PATH, 'members.yml'))
+          @@members = {}
+          yaml.each do |k, v|
+            @@members[k] = Member.new(k, v)
+          end
+        end
+
+        def initialize_story
+          @@story = Story.new
+        end
     end
   end
 end

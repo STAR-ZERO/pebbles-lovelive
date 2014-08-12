@@ -6,16 +6,24 @@ module Pebbles
       expect(Pebbles::LoveLive::VERSION).not_to be_nil
     end
 
-    context 'exists member' do
-      before { @member = Pebbles::LoveLive.eli }
-      subject { @member }
-      it { should_not be_nil }
+    describe '#member' do
+      context 'exists member' do
+        before { @member = Pebbles::LoveLive.eli }
+        subject { @member }
+        it { should_not be_nil }
+      end
+
+      context 'not exists member' do
+        before { @member = Pebbles::LoveLive.alpaca }
+        subject { @member }
+        it { should be_nil }
+      end
     end
 
-    context 'not exists member' do
-      before { @member = Pebbles::LoveLive.alpaca }
-      subject { @member }
-      it { should be_nil }
+    describe '#story' do
+      before { @story = Pebbles::LoveLive.story }
+      subject { @story }
+      it { should_not be_nil }
     end
   end
 end

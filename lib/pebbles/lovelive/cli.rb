@@ -39,7 +39,14 @@ module Pebbles
         end
       end
 
-      desc 'help [member]', 'show help'
+      desc 'story [option]', 'show story'
+      option :desc, type: :boolean, :desc => "show description"
+      def story
+        story = LoveLive.story
+        story.print(options[:desc])
+      end
+
+      desc 'help [COMMAND]', 'show help. COMMAND is "member" or "story".'
       def help(command = nil, subcommand = false)
         super(command, subcommand)
       end
