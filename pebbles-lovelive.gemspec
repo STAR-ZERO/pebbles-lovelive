@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Pebbles::LoveLive::VERSION
   spec.authors       = ["Kenji Abe"]
   spec.email         = ["kenji.01.star@gmail.com"]
-  spec.summary       = %q{ Show the profile of LoveLive μ's members }
-  spec.description   = %q{ Show the profile of LoveLive μ's members }
+  spec.summary       = %q{ Show the profile of LoveLive μ's members and story of TV }
+  spec.description   = %q{ Show the profile of LoveLive μ's members and story of TV }
   spec.homepage      = "https://github.com/STAR-ZERO/pebbles-lovelive"
   spec.license       = "MIT"
 
