@@ -5,7 +5,7 @@
 [![Code Climate](https://codeclimate.com/github/STAR-ZERO/pebbles-lovelive.png)](https://codeclimate.com/github/STAR-ZERO/pebbles-lovelive)
 [![Dependency Status](https://gemnasium.com/STAR-ZERO/pebbles-lovelive.svg)](https://gemnasium.com/STAR-ZERO/pebbles-lovelive)
 
-Show the profile of LoveLive μ's members.
+Show the profile of LoveLive μ's members and story of TV.
 
 [LoveLive!](http://www.lovelive-anime.jp/) is Japanese Animation.
 
@@ -130,7 +130,7 @@ s`d/ ````:N..y  `...:.      .- `./+:-`.:-::-oo```...``yy.o+.--`  s-``` /o.
                  o::hs/d/-+ .h .o -h.+so+Mh-/./s.
 ```
 
-## Members and aliases
+### Members and aliases
 
 |    name    |  alias |
 |------------|--------|
@@ -143,6 +143,30 @@ s`d/ ````:N..y  `...:.      .- `./+:-`.:-::-oo```...``yy.o+.--`  s-``` /o.
 | 東條希     | nozomi |
 | 小泉花陽   | hanayo |
 | 矢澤にこ   | nico   |
+
+### Show story
+
+```
+$ lovelive story
+1期
+------------------------------------
+第1話「叶え！私たちの夢——」
+第2話「アイドルを始めよう！」
+...
+...
+```
+
+show story description
+
+```
+$ lovelive story --desc
+1期
+------------------------------------
+第1話「叶え！私たちの夢——」
+  東京都千代田区にある伝統校「国立音ノ木坂学院」。ここに通う高校2年の高坂穂乃果は、....
+...
+...
+```
 
 ## Contributing
 
