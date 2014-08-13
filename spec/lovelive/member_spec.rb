@@ -30,6 +30,27 @@ module Pebbles
       it "#three_size is format of three size" do
         expect(eli.three_size).to eq("B#{@eli.bust}・W#{@eli.waste}・H#{@eli.hip}")
       end
+
+      describe "#print" do
+        it "show member profile" do
+          output = capture_stdout { @eli.print(false, false) }
+          expect(output).to include "名前: 絢瀬絵里"
+        end
+
+        context "aa flag ture" do
+          it "show aa" do
+            output = capture_stdout { @eli.print(true, false) }
+            expect(output).to include "　　　　　　　　　　　　　, 、　, -‐- 、"
+          end
+        end
+
+        context "big aa flag ture" do
+          it "show big aa" do
+            output = capture_stdout { @eli.print(false, true) }
+            expect(output).to include "                                             .-+o/+o+-`.                        "
+          end
+        end
+      end
     end
   end
 end

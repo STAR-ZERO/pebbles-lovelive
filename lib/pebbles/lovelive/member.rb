@@ -27,8 +27,8 @@ module Pebbles
         "B#{bust}・W#{waste}・H#{hip}"
       end
 
-      def to_s
-        <<-EOS.gsub(/^\s+/, '')
+      def print(is_aa, is_big_aa)
+        puts <<-EOS.gsub(/^\s+/, '')
           名前: #{name}
           CV: #{cv}
           年齢: #{age}歳
@@ -40,6 +40,8 @@ module Pebbles
           嫌いな食べ物: #{dislike_food}
           プロフィール: #{profile}
         EOS
+        puts aa if is_aa
+        puts big_aa if is_big_aa
       end
     end
   end

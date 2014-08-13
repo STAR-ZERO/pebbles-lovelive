@@ -29,9 +29,7 @@ module Pebbles
       def member(name)
         member = LoveLive.send(name)
         if member
-          puts member
-          puts member.aa if options[:aa]
-          puts member.big_aa if options[:bigaa]
+          member.print(options[:aa], options[:bigaa])
         else
           puts "Error: unknown member"
           puts ""
