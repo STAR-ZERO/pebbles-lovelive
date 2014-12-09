@@ -11,6 +11,10 @@ module Pebbles
         initialize_story
       end
 
+      def members
+        @@members
+      end
+
       def story
         @@story
       end
