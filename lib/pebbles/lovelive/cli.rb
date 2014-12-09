@@ -37,6 +37,13 @@ module Pebbles
         end
       end
 
+      desc 'members', 'show member list'
+      def members
+        LoveLive.members.each do |key, member|
+          puts member.name
+        end
+      end
+
       desc 'story [option]', 'show story'
       option :desc, type: :boolean, :desc => "show description"
       def story
