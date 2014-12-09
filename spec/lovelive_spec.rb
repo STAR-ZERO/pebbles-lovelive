@@ -6,6 +6,13 @@ module Pebbles
       expect(Pebbles::LoveLive::VERSION).not_to be_nil
     end
 
+    describe '#members' do
+      before { @members = Pebbles::LoveLive.members }
+      subject { @members }
+      it { should_not be_nil }
+      it { should be_kind_of(Hash) }
+    end
+
     describe '#member' do
       context 'exists member' do
         before { @member = Pebbles::LoveLive.eli }
